@@ -4,108 +4,170 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_shape"
-
+    android:background="@color/black"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Music Player App"
-        android:textColor="@color/white"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+    <!--    <Button-->
+    <!--        android:id="@+id/pause_btn"-->
+    <!--        android:layout_width="60dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_marginStart="36dp"-->
+    <!--        android:background="@drawable/pause_icon"-->
+    <!--        app:layout_constraintBaseline_toBaselineOf="@+id/circular_play_btn"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/circular_play_btn"-->
+    <!--        tools:ignore="MissingConstraints" />-->
 
-    <Button
-        android:id="@+id/pause_btn"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="36dp"
-        android:background="@drawable/pause_icon"
-        app:layout_constraintBaseline_toBaselineOf="@+id/play_btn"
-        app:layout_constraintStart_toEndOf="@+id/play_btn"
-        tools:ignore="MissingConstraints" />
+    <!--    <Button-->
+    <!--        android:id="@+id/back_btn"-->
+    <!--        android:layout_width="60dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_marginStart="44dp"-->
+    <!--        android:background="@drawable/back_icon"-->
+    <!--        app:layout_constraintBaseline_toBaselineOf="@+id/circular_play_btn"-->
+    <!--        app:layout_constraintStart_toStartOf="parent" />-->
 
-    <Button
-        android:id="@+id/back_btn"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="44dp"
-        android:background="@drawable/back_icon"
-        app:layout_constraintBaseline_toBaselineOf="@+id/play_btn"
-        app:layout_constraintStart_toStartOf="parent"/>
+    <!--    <Button-->
+    <!--        android:id="@+id/play_btn"-->
+    <!--        android:layout_width="60dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_marginTop="164dp"-->
+    <!--        android:background="@drawable/play_arrow"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.396"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/card_view_maroo"-->
+    <!--        tools:ignore="MissingConstraints" />-->
 
     <Button
         android:id="@+id/play_btn"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="164dp"
-        android:background="@drawable/play_arrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="10dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/play_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.396"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/card_view_maroo" />
+
+    <!--    <Button-->
+<!--        android:id="@+id/forward_btn"-->
+<!--        android:layout_width="60dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_marginStart="24dp"-->
+<!--        android:background="@drawable/pause_btn"-->
+<!--        android:drawableTint="@color/white"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/circular_play_btn"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/circular_play_btn" />-->
 
     <Button
         android:id="@+id/forward_btn"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="24dp"
-        android:background="@drawable/forward_icon"
-        app:layout_constraintBaseline_toBaselineOf="@+id/pause_btn"
-        app:layout_constraintEnd_toEndOf="parent"  />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/music_logo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/fast_forward"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toEndOf="@+id/play_btn"
+        app:layout_constraintTop_toTopOf="@+id/play_btn" />
 
-    <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
+    <Button
+        android:id="@+id/bcakward_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/backward"
+        android:drawableTint="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/play_btn"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/play_btn" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_maroo"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/maro_img"
+
+
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!--    <SeekBar-->
+    <!--        android:id="@+id/seekBar"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="30dp"-->
+    <!--        android:layout_marginEnd="30dp"-->
+    <!--        android:layout_marginBottom="30dp"-->
+    <!--        android:progressDrawable="@drawable/wave_progress"-->
+    <!--        android:thumb="@drawable/custom_thumb"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/forward_btn"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/card_view_maroo"-->
+    <!--        app:layout_constraintVertical_bias="0.681"-->
+    <!--        tools:ignore="MissingConstraints" />-->
+
+
+    <com.example.mediaplayer.WaveformSeekBar
+        android:id="@+id/waveformSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         app:layout_constraintBottom_toTopOf="@+id/forward_btn"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        tools:ignore="MissingConstraints" />
+
+        app:layout_constraintTop_toBottomOf="@+id/song_title"
+        app:layout_constraintVertical_bias="0.269" />
 
     <TextView
         android:id="@+id/time_left_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/lobster"
         android:text="00:00"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/waveformSeekBar"
+        app:layout_constraintTop_toBottomOf="@+id/waveformSeekBar"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/song_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/lobster"
         android:text="Song Title"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.358"
-        app:layout_constraintStart_toEndOf="@+id/time_left_text"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view_maroo"
         tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
